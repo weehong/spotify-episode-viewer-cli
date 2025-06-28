@@ -1,0 +1,48 @@
+{
+  "name": "spotify-show-app",
+  "version": "2.0.0",
+  "description": "A refactored Spotify show details application following SOLID principles",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/app.js",
+    "cli": "node src/app.js cli",
+    "interactive": "node src/app.js",
+    "dev": "node src/app.js",
+    "legacy": "node src/app.js legacy",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test:integration": "jest --testPathPattern=IntegrationTest",
+    "quality": "node scripts/codeQuality.js",
+    "lint": "echo \"Linting not configured yet\"",
+    "show:details": "node scripts/showDetails.js",
+    "show:summary": "node scripts/showSummary.js",
+    "show:episodes": "node scripts/showEpisodes.js",
+    "migrate:favorites": "node scripts/migrateFavoritesToSQLite.js"
+  },
+  "keywords": [
+    "spotify",
+    "api",
+    "solid",
+    "nodejs",
+    "refactoring"
+  ],
+  "author": "Developer",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "chalk": "^4.1.2",
+    "cli-table3": "^0.6.5",
+    "dotenv": "^16.5.0",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
